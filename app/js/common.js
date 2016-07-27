@@ -4,20 +4,41 @@ $(function() {
 	// 	$(".preloader_overlay").fadeOut();
 	// }, 3000);
 
-	$(".preloader_overlay").fadeOut();
 
-	$(".mobile-menu").click(function() {
-		var menu = $(this).find(".toggle-mnu");
-		menu.toggleClass("on");
-		$(".main-mnu").slideToggle();
-		return false;
-	});
+	$(".preloader_overlay").fadeOut();
 
 
 	$('ul.sf-menu').superfish({
 		hoverClass: "no-class",
 		delay: 400
+	})
+	.after("<div id='mob_menu'>").clone().appendTo("#mob_menu");
+	$("#mob_menu").children("ul").removeClass("sf-menu");
+	$("#mob_menu").find("*").attr("style", "");
+
+
+
+
+	var $menu = $('#mob_menu');
+	var $btnMenu = $('.toggle-mnu');
+
+	$menu.mmenu({
+		counters: true 
 	});
+
+	var api = $menu.data("mmenu");
+
+	$btnMenu.click(function() {
+		api.open();
+		$(".toggle-mnu").addClass("on");
+	});
+
+
+	api.bind("closed", function () {
+		$(".toggle-mnu").removeClass("on");
+	});
+
+
 
 	var owl = $("#owl-example");
 
@@ -34,10 +55,10 @@ $(function() {
 	})
 // Go to the previous item
 $('.customPrevBtn').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
-  });
+		// With optional speed parameter
+		// Parameters has to be in square bracket '[]'
+		owl.trigger('prev.owl.carousel', [300]);
+	});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

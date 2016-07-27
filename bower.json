@@ -4,6 +4,7 @@
     "jquery": "^3.1.0",
     "owl.carousel": "OwlCarousel2#^2.1.6",
     "font-awesome": "fontawesome#^4.6.3",
-    "superfish": "^1.7.9"
+    "superfish": "^1.7.9",
+    "jQuery.mmenu": "mmenu#^5.6.5"
   }
 }
