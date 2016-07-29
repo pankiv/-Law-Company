@@ -2,11 +2,12 @@
 @import "vars.sass"
 
 //Load Libs SASS
-@import "app/libs/animate/animate.sass"
 @import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
 @import "app/libs/font-awesome/scss/font-awesome"
 @import "app/libs/superfish/dist/css/superfish"
 @import "app/libs/jQuery.mmenu/dist/css/jquery.mmenu.all"
+@import "app/libs/strability/strability.sass"
+
 
 *::-webkit-input-placeholder
 	color: #666
@@ -33,6 +34,165 @@ body textarea:required:valid
 
 //Custom Styles Here
 
+
+.teaser
+	background-color: $bgc
+	color: #fff	
+	padding: 20px 0
+	position: relative
+	z-index: 1
+
+.teaser-wrap
+	display: table-row
+.teaser-icon
+	display: table-cell
+	.fa
+		color: #28189F
+		font-size: 50px
+		position: relative
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #fff
+		font-size: 16px
+		font-weight: bold
+
+.teaser-text
+	display: table-cell
+	vertical-align: top
+	font-size: em(20px)
+	line-height: 25px
+	padding-top: 5px
+	padding-left: 18px
+
+.services
+	margin: 15px 0
+
+.services-item
+	margin: 25px 0 40px
+	background-color: #FFF
+	text-align: center
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+	box-shadow: 0 14px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+	&:hover
+		box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22)
+		.s-imr-wrap::before
+			opacity: .4
+			img
+				transform: scale(1.2)
+		.fa
+			opacity: 1
+	.s_text
+		font-style: italic
+		font-size: em(12px)
+		max-width: 320px
+		margin: 0 auto
+
+.s-imr-wrap
+	position: relative
+	img 
+		max-width: 100%
+		min-height: 200px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		background-color: $bgc
+		opacity: .5
+		transition: all 1.5s
+		opacity: 0
+
+	.fa
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: lighten($bgc, 30%)
+		font-size: 20px
+		transition: all 2s
+		opacity: 0
+
+.services-text
+	text-transform: uppercase
+	font-size: em(16px)
+	.descr
+		font-style: italic
+		p 
+			margin-top: 0
+		.fa
+			color: #EF1C30
+		span
+			font-size: em(30px)
+			font-style: normal
+			color: $bgc
+	.button
+		margin-bottom: 20px
+
+
+
+// particle js
+
+.particle
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+
+canvas
+	display: block
+	vertical-align: bottom
+
+/* ---- particles.js container ----
+
+#particles-js
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: #F1F4F9
+	background-image: url("")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+
+/* ---- stats.js ----
+
+.count-particles
+	background: #000022
+	position: absolute
+	top: 48px
+	left: 0
+	width: 80px
+	color: #13E8E9
+	font-size: .8em
+	text-align: left
+	text-indent: 4px
+	line-height: 14px
+	padding-bottom: 2px
+	font-family: Helvetica, Arial, sans-serif
+	font-weight: bold
+	opacity: 0
+
+.js-count-particles
+	font-size: 1.1em
+	opacity: 0
+
+#stats, .count-particles
+	-webkit-user-select: none
+	margin-top: 5px
+	margin-left: 5px
+
+#stats
+	border-radius: 3px 3px 0 0
+	overflow: hidden
+
+.count-particles
+	border-radius: 0 0 3px 3px
 
 //ALWAYS END
 @import "media"

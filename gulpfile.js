@@ -34,7 +34,9 @@ gulp.task('scripts', function() {
 		'./app/libs/jquery/dist/jquery.min.js',
 		'./app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'./app/libs/superfish/dist/js/superfish.min.js',
-		'./app/libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js'
+		'./app/libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
+		'./app/libs/particles.js/particles.min.js',
+		'./app/libs/salvattore/dist/salvattore.min.js'
 
 		])
 		.pipe(concat('libs.js'))

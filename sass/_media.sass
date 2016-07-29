@@ -2,6 +2,25 @@
 
 /*==========  Desktop First Method  ==========*/
 
+
+
+@media screen and (max-width : 768px)
+	.massonry[data-columns]::before
+		content: "1 .col-xs-12" 
+
+@media screen and (min-width : 768px) and (max-width : 992px)
+	.massonry[data-columns]::before
+		content: "2 .col-xs-6" 
+
+@media screen and (min-width : 992px) and (max-width : 1200px)
+	.massonry[data-columns]::before
+		content: "3 .col-xs-4" 
+
+
+@media screen and (min-width : 1200px)
+	.massonry[data-columns]::before
+		content: "4 .col-xs-3" 
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
@@ -66,7 +85,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.allwidth
+		width: 100%
+		padding: 15px
 
 
 /* Custom, iPhone Retina */
