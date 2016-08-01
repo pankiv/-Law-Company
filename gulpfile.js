@@ -36,7 +36,8 @@ gulp.task('scripts', function() {
 		'./app/libs/superfish/dist/js/superfish.min.js',
 		'./app/libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
 		'./app/libs/particles.js/particles.min.js',
-		'./app/libs/salvattore/dist/salvattore.min.js'
+		'./app/libs/salvattore/dist/salvattore.min.js',
+		'./app/libs/equalHeights/equalheights.js'
 
 		])
 		.pipe(concat('libs.js'))

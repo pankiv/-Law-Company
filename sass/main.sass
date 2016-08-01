@@ -194,5 +194,247 @@ canvas
 .count-particles
 	border-radius: 0 0 3px 3px
 
+
+
+
+.our-news
+	margin-top: 150px
+	padding: 50px 0
+	position: relative
+	z-index: 1
+	background-color: rgba(27,54,221,.55)
+	color: #fff
+	h2
+		text-transform: uppercase
+		font-size: em(32px)
+	.button
+		background-color: #F3A807
+		text-align: center
+		display: block
+		margin-top: 20px
+		transition: all .8s
+		&:hover
+			background-color: #0EE627
+			border-bottom: 2px solid #408D1E
+			color: #fff
+	.services-text
+		color: #000
+	.s_text
+		text-transform: none
+		font-style: normal
+		font-size: em(14px)
+
+
+
+
+.portall
+	background-color: rgba(148, 144, 181,.4)
+	position: relative
+	z-index: 1
+	h2
+		text-transform: uppercase
+		font-size: em(32px)
+	.button
+		background-color: #F3A807
+		text-align: center
+		display: block
+		margin-top: 20px
+		transition: all .8s
+		&:hover
+			background-color: #0EE627
+			border-bottom: 2px solid #408D1E
+			color: #fff
+
+.portall-row
+	padding-top: 35px
+
+
+.portall_item
+	margin-bottom: 35px
+	position: relative
+	border: 4px #D5841C solid
+	display: block
+	padding: 15px
+	padding-bottom: 25px
+	transition: all .5s ease-in-out
+	&:after
+		display: table
+		content: ""
+		clear: both
+	img
+		height: 50px
+		position: absolute
+		top: 10px
+		left: 10px
+	.p_text
+		display: block
+		padding-left: 50px
+		color: #222
+		text-transform: uppercase
+		font-family: "OpenSansBold", $helvetica
+		font-weight: bold
+		line-height: 18px
+		text-decoration: underline
+	&:hover
+		background-color: #5EA6F6
+		.p_text
+			text-decoration: none
+
+
+
+.home-foot
+	position: relative
+	z-index: 1
+	background-color: #100B14
+	color: #fff
+	padding: 70px 0
+	.logo_wrap
+		opacity: .4
+		font-size: em(13px)
+	.top-panel-box
+		li 
+			max-width: 100%
+			margin-bottom: 30px
+			opacity: .6
+
+
+
+.i-am
+	margin-top: 50px
+	text-align: right
+
+.triger
+	position: relative
+	display: inline-block
+	background-color: #3066BE
+	width: 200px
+	height: 50px
+	color: #fff
+	line-height: 50px
+	border-radius: 50em
+	text-align: center
+	span
+		overflow: hidden
+	span, em, i
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transition: all .5s
+	i 
+		top: 100%
+		color: #fff
+		font-size: 40px
+	&:hover
+		i 
+			top: 5px
+		em
+			top: -100%	
+		&::before, &::after
+			opacity: 1
+			visibility: visible
+		&::before
+			bottom: 85px
+		&::after
+			bottom: 55px
+	&::before
+		position: absolute
+		content: 'github'
+		position: absolute
+		width: 150px
+		height: 50px
+		line-height: 50px
+		background-color: #B4C5E4
+		bottom: 0
+		color: #000
+		left: calc(50% - 75px)
+		border-radius: .6em
+		opacity: 0
+		transition: opacity .4s, visibility .4s, bottom .5s
+		visibility: hidden
+	&::after
+		position: absolute
+		content: ''
+		width: 0
+		height: 0
+		border: 15px solid transparent
+		border-top-color: #B4C5E4
+		left: calc(50% - 15px)
+		bottom: 0
+		opacity: 0
+		transition: opacity .4s, visibility .4s, bottom .5s
+		visibility: hidden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //ALWAYS END
 @import "media"

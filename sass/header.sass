@@ -320,4 +320,35 @@ a
 	&.on span:after 
 		transform: rotate(-45deg) translate(6px, -7px)
 
-	
+
+.foot-list
+	h4
+		text-transform: uppercase
+		margin: 0
+		position: relative
+		&::after
+			content: ""
+			position: absolute
+			left: 0
+			bottom: -11px
+			height: 1px
+			width: 100%
+			background-color: $text-c 
+	ul
+		list-style-type: none
+		padding-left: 0
+		li
+			a 	
+				color: #fff
+				text-decoration: underline
+				display: inline-block
+				padding: 5px 0
+				padding-left: 10px
+				opacity: .4
+			&:hover
+				a, .fa 
+					opacity: .9
+					text-decoration: none
+			.fa
+				opacity: .4
+

@@ -4,6 +4,8 @@ $(function() {
 	// 	$(".preloader_overlay").fadeOut();
 	// }, 3000);
 
+	$(".portall_item").equalHeights();
+
 
 	$(".preloader_overlay").fadeOut();
 
@@ -60,12 +62,15 @@ $('.customPrevBtn').click(function() {
 		owl.trigger('prev.owl.carousel', [300]);
 	});
 
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
+
+	
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
@@ -219,5 +224,7 @@ $('.customPrevBtn').click(function() {
 		requestAnimationFrame(update);
 	};
 	requestAnimationFrame(update);
+
+
 
 });
