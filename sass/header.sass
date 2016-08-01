@@ -1,354 +1,354 @@
-@import "bourbon"
-@import "vars.sass"
+// @import "bourbon"
+// @import "vars.sass"
 
-body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
-	overflow-x: hidden
+// body
+// 	font-size: 16px
+// 	min-width: 320px
+// 	position: relative
+// 	line-height: 1.6
+// 	font-family: "RobotoRegular", sans-serif
+// 	overflow-x: hidden
 
-.hidden
-	display: none
+// .hidden
+// 	display: none
 
-.preloader_overlay 
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	text-align: center
-	z-index: 10
-	background-color: #ffffff
-	opacity: 1
-	transition: opacity 1s
+// .preloader_overlay 
+// 	position: fixed
+// 	top: 0
+// 	left: 0
+// 	right: 0
+// 	bottom: 0
+// 	text-align: center
+// 	z-index: 10
+// 	background-color: #ffffff
+// 	opacity: 1
+// 	transition: opacity 1s
 
-.spinner
-	width: 50px
-	height: 50px
-	display: inline-block
-	margin: 0 auto
-	position: fixed
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
-.double-bounce1, .double-bounce2
-	width: 100%
-	height: 100%
-	border-radius: 50%
-	background-color: $bgc
-	opacity: 0.6
-	position: absolute
-	z-index: 11
-	top: 0
-	left: 0
-	animation: sk-bounce 2.0s infinite ease-in-out
+// .spinner
+// 	width: 50px
+// 	height: 50px
+// 	display: inline-block
+// 	margin: 0 auto
+// 	position: fixed
+// 	top: 50%
+// 	left: 50%
+// 	transform: translate(-50%, -50%)
+// .double-bounce1, .double-bounce2
+// 	width: 100%
+// 	height: 100%
+// 	border-radius: 50%
+// 	background-color: $bgc
+// 	opacity: 0.6
+// 	position: absolute
+// 	z-index: 11
+// 	top: 0
+// 	left: 0
+// 	animation: sk-bounce 2.0s infinite ease-in-out
 
-.double-bounce2
-	animation-delay: -1.0s
-
-
-
-@keyframes sk-bounce
-	0%, 100% 
-		transform: scale(0.0)
-	50% 
-		transform: scale(1.0)
+// .double-bounce2
+// 	animation-delay: -1.0s
 
 
 
-a
-	outline: none !important
-	&:hover
-		text-decoration: none
-
-#mob_menu
-	z-index: 1
+// @keyframes sk-bounce
+// 	0%, 100% 
+// 		transform: scale(0.0)
+// 	50% 
+// 		transform: scale(1.0)
 
 
-.menu
-	background-color: $bgc
-	text-align: center
-	.sf-menu
-		margin: 0 auto -7px
-		float: none
-		display: inline-block
-		font-size: em(16px)
-		li 
-			background-color: $bgc
-			border-bottom: 1px solid lighten($bgc, 10px)
-			&.active
-				background-color: darken($bgc, 5%)
-			&:hover
-				background-color: darken($bgc, 5%)
-			a 
-				color: #fff
-				border: none
-				padding: 22px 30px 20px
-				margin-bottom: 0
-				.fa
-					margin-left: 10px
-				&:hover
-					color: $text-c
-	ul 
-		list-style-type: none
-		padding: 0
-		margin: 0
-	> li
-		display: inline-block
-		text-align: center
-		background-color: #FFF
+
+// a
+// 	outline: none !important
+// 	&:hover
+// 		text-decoration: none
+
+// #mob_menu
+// 	z-index: 1
 
 
-.left
-	a 
-		text-align: left
+// .menu
+// 	background-color: $bgc
+// 	text-align: center
+// 	.sf-menu
+// 		margin: 0 auto -7px
+// 		float: none
+// 		display: inline-block
+// 		font-size: em(16px)
+// 		li 
+// 			background-color: $bgc
+// 			border-bottom: 1px solid lighten($bgc, 10px)
+// 			&.active
+// 				background-color: darken($bgc, 5%)
+// 			&:hover
+// 				background-color: darken($bgc, 5%)
+// 			a 
+// 				color: #fff
+// 				border: none
+// 				padding: 22px 30px 20px
+// 				margin-bottom: 0
+// 				.fa
+// 					margin-left: 10px
+// 				&:hover
+// 					color: $text-c
+// 	ul 
+// 		list-style-type: none
+// 		padding: 0
+// 		margin: 0
+// 	> li
+// 		display: inline-block
+// 		text-align: center
+// 		background-color: #FFF
 
 
-.top_panel
-	font-size: 15px
-	padding: 40px 0
-	background-color: lighten($bgc, 5%)
-	color: #fff
-	position: relative
-	border-bottom: rgba(#fff, .35) 10px solid
-	&::before
-		content: ""
-		position: absolute
-		top: 0
-		left: 0
-		bottom: 0
-		right: 0
-		background-image: url("../img/bg.jpg")
-		opacity: 0.16
-
-.top-panel-box
-	h4
-		text-transform: uppercase
-		margin: 0
-		position: relative
-		&::after
-			content: ""
-			position: absolute
-			left: 0
-			bottom: -11px
-			height: 1px
-			width: 100%
-			background-color: $text-c 
-	ul
-		list-style-type: none
-		padding-left: 0
-		opacity: .6
-		li 
-			display: inline-block
-			max-width: 49%
-			padding-left: 35px
-			position: relative
-			&:only-child
-				max-width: 100%
-			.fa
-				position: absolute
-				top: 10px
-				left: 3px
-				font-size: em(20px)
-
-.logo_wrap
-	img
-		max-width: 100%
+// .left
+// 	a 
+// 		text-align: left
 
 
-.phone_wrap
-	text-align: right
-	font-family: "RobotoMedium", sans-serif
-	font-weight: 500
-	.button
-		position: relative
-		color: #000
-		&:hover, &:focus
-			background-color: darken(#FFC400, 10%)
-		&:focus
-			animation: shacke 40ms 30
-	span
+// .top_panel
+// 	font-size: 15px
+// 	padding: 40px 0
+// 	background-color: lighten($bgc, 5%)
+// 	color: #fff
+// 	position: relative
+// 	border-bottom: rgba(#fff, .35) 10px solid
+// 	&::before
+// 		content: ""
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		bottom: 0
+// 		right: 0
+// 		background-image: url("../img/bg.png")
+// 		opacity: 0.16
 
-		font-size: em(12px)
-		opacity: .7
-	a 	
-		color: #fff
+// .top-panel-box
+// 	h4
+// 		text-transform: uppercase
+// 		margin: 0
+// 		position: relative
+// 		&::after
+// 			content: ""
+// 			position: absolute
+// 			left: 0
+// 			bottom: -11px
+// 			height: 1px
+// 			width: 100%
+// 			background-color: $text-c 
+// 	ul
+// 		list-style-type: none
+// 		padding-left: 0
+// 		opacity: .6
+// 		li 
+// 			display: inline-block
+// 			max-width: 49%
+// 			padding-left: 35px
+// 			position: relative
+// 			&:only-child
+// 				max-width: 100%
+// 			.fa
+// 				position: absolute
+// 				top: 10px
+// 				left: 3px
+// 				font-size: em(20px)
+
+// .logo_wrap
+// 	img
+// 		max-width: 100%
+
+
+// .phone_wrap
+// 	text-align: right
+// 	font-family: "RobotoMedium", sans-serif
+// 	font-weight: 500
+// 	.button
+// 		position: relative
+// 		color: #000
+// 		&:hover, &:focus
+// 			background-color: darken(#FFC400, 10%)
+// 		&:focus
+// 			animation: shacke 40ms 30
+// 	span
+
+// 		font-size: em(12px)
+// 		opacity: .7
+// 	a 	
+// 		color: #fff
 		
 
-.top_phone
-	font-size: em(20px)
+// .top_phone
+// 	font-size: em(20px)
 
-.top_button
-	text-transform: uppercase
-	padding-top: 15px
-
-
-.button
-	display: inline-block
-	background-color: #FFC400
-	border-bottom: 2px solid #B78800
-	border-radius: 4px
-	padding: 10px 15px
-	color: #000
-	font-weight: bold
-	font-family: "RobotoBold", sans-serif
-	&:hover, &:focus
-		text-decoration: none
-		color: #000
-
-@keyframes shacke 
-	50%
-		margin-left: -5px 
-	100%
-		margin-right: -5px
+// .top_button
+// 	text-transform: uppercase
+// 	padding-top: 15px
 
 
-.slide
-	padding: 9% 0
-	color: #fff
-	background-position: center
-	background-size: cover
-	transition: all 1s 
-	h1 
-		margin-top: 0
-		&:first-line
-			color: $text-c
-	h1, p
-		transform: translateX(70px)
-		opacity: 0
-		transition: all .8s
+// .button
+// 	display: inline-block
+// 	background-color: #FFC400
+// 	border-bottom: 2px solid #B78800
+// 	border-radius: 4px
+// 	padding: 10px 15px
+// 	color: #000
+// 	font-weight: bold
+// 	font-family: "RobotoBold", sans-serif
+// 	&:hover, &:focus
+// 		text-decoration: none
+// 		color: #000
+
+// @keyframes shacke 
+// 	50%
+// 		margin-left: -5px 
+// 	100%
+// 		margin-right: -5px
 
 
-
-
-.owl-carousel
-	position: relative
-	.owl-dots
-		position: absolute
-		bottom: 10px
-		text-align: center
-		width: 100%
-		.owl-dot
-			display: inline-block
-			width: 15px
-			height: 15px
-			background-color: $bgc
-			margin-right: 3px
-			cursor: pointer
-			border-radius: 10em
-			&.active
-				background-color: $text-c
-	.active
-		img
-			transform: scale(1)
-		h1, p
-			opacity: 1
-			transform: translateX(0px)
+// .slide
+// 	padding: 9% 0
+// 	color: #fff
+// 	background-position: center
+// 	background-size: cover
+// 	transition: all 1s 
+// 	h1 
+// 		margin-top: 0
+// 		&:first-line
+// 			color: $text-c
+// 	h1, p
+// 		transform: translateX(70px)
+// 		opacity: 0
+// 		transition: all .8s
 
 
 
 
-.top_img_wrap
-	text-align: center
-	img
-		display: inline-block !important
-		max-width: 400px
-		margin-top: 40px
-		transform: scale(0)
-		transition: all .7s
+// .owl-carousel
+// 	position: relative
+// 	.owl-dots
+// 		position: absolute
+// 		bottom: 10px
+// 		text-align: center
+// 		width: 100%
+// 		.owl-dot
+// 			display: inline-block
+// 			width: 15px
+// 			height: 15px
+// 			background-color: $bgc
+// 			margin-right: 3px
+// 			cursor: pointer
+// 			border-radius: 10em
+// 			&.active
+// 				background-color: $text-c
+// 	.active
+// 		img
+// 			transform: scale(1)
+// 		h1, p
+// 			opacity: 1
+// 			transform: translateX(0px)
 
 
 
 
-.nivagation
-	position: relative
-	padding: 0 50px 
-	.owl-nav
-		font-size: em(30px)
-	.owl-prev
-		position: absolute
-		left: 0
-		top: 49%
-	.owl-next
-		position: absolute
-		right: 0
-		top: 49%
+// .top_img_wrap
+// 	text-align: center
+// 	img
+// 		display: inline-block !important
+// 		max-width: 400px
+// 		margin-top: 40px
+// 		transform: scale(0)
+// 		transition: all .7s
 
 
-// mobile menu
-
-.mobile-menu
-	background-color: $text-c
-	padding: 15px
-
-.toggle-mnu 
-	display: block
-	width: 28px
-	height: 28px
-	margin-top: 14px
-
-	span:after, span:before 
-		content: ""
-		position: absolute
-		left: 0
-		top: 9px
-
-	span:after
-		top: 18px
-
-	span 
-		position: relative
-		display: block
-
-	span, span:after, span:before
-		width: 100%
-		height: 2px
-		background-color: #000
-		transition: all 0.3s
-		backface-visibility: hidden
-		border-radius: 2px
 
 
-	&.on span 
-		background-color: transparent
+// .nivagation
+// 	position: relative
+// 	padding: 0 50px 
+// 	.owl-nav
+// 		font-size: em(30px)
+// 	.owl-prev
+// 		position: absolute
+// 		left: 0
+// 		top: 49%
+// 	.owl-next
+// 		position: absolute
+// 		right: 0
+// 		top: 49%
 
-	&.on span:before 
-		transform: rotate(45deg) translate(-1px, 0px)
 
-	&.on span:after 
-		transform: rotate(-45deg) translate(6px, -7px)
+// // mobile menu
+
+// .mobile-menu
+// 	background-color: $text-c
+// 	padding: 15px
+
+// .toggle-mnu 
+// 	display: block
+// 	width: 28px
+// 	height: 28px
+// 	margin-top: 14px
+
+// 	span:after, span:before 
+// 		content: ""
+// 		position: absolute
+// 		left: 0
+// 		top: 9px
+
+// 	span:after
+// 		top: 18px
+
+// 	span 
+// 		position: relative
+// 		display: block
+
+// 	span, span:after, span:before
+// 		width: 100%
+// 		height: 2px
+// 		background-color: #000
+// 		transition: all 0.3s
+// 		backface-visibility: hidden
+// 		border-radius: 2px
 
 
-.foot-list
-	h4
-		text-transform: uppercase
-		margin: 0
-		position: relative
-		&::after
-			content: ""
-			position: absolute
-			left: 0
-			bottom: -11px
-			height: 1px
-			width: 100%
-			background-color: $text-c 
-	ul
-		list-style-type: none
-		padding-left: 0
-		li
-			a 	
-				color: #fff
-				text-decoration: underline
-				display: inline-block
-				padding: 5px 0
-				padding-left: 10px
-				opacity: .4
-			&:hover
-				a, .fa 
-					opacity: .9
-					text-decoration: none
-			.fa
-				opacity: .4
+// 	&.on span 
+// 		background-color: transparent
+
+// 	&.on span:before 
+// 		transform: rotate(45deg) translate(-1px, 0px)
+
+// 	&.on span:after 
+// 		transform: rotate(-45deg) translate(6px, -7px)
+
+
+// .foot-list
+// 	h4
+// 		text-transform: uppercase
+// 		margin: 0
+// 		position: relative
+// 		&::after
+// 			content: ""
+// 			position: absolute
+// 			left: 0
+// 			bottom: -11px
+// 			height: 1px
+// 			width: 100%
+// 			background-color: $text-c 
+// 	ul
+// 		list-style-type: none
+// 		padding-left: 0
+// 		li
+// 			a 	
+// 				color: #fff
+// 				text-decoration: underline
+// 				display: inline-block
+// 				padding: 5px 0
+// 				padding-left: 10px
+// 				opacity: .4
+// 			&:hover
+// 				a, .fa 
+// 					opacity: .9
+// 					text-decoration: none
+// 			.fa
+// 				opacity: .4
 
