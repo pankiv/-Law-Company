@@ -1,13 +1,8 @@
 $(function() {
 
-	// setTimeout(function() {
-	// 	$(".preloader_overlay").fadeOut();
-	// }, 3000);
+	$(".preloader_overlay").fadeOut();
 
 	$(".portall_item").equalHeights();
-
-
-	$(".preloader_overlay").fadeOut();
 
 
 	$('ul.sf-menu').superfish({
@@ -70,7 +65,7 @@ $('.customPrevBtn').click(function() {
 		});
 	};
 
-	
+
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
@@ -224,7 +219,6 @@ $('.customPrevBtn').click(function() {
 		requestAnimationFrame(update);
 	};
 	requestAnimationFrame(update);
-
 
 
 });
