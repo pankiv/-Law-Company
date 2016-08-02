@@ -8,6 +8,7 @@
     "jQuery.mmenu": "mmenu#^5.6.5",
     "particles.js": "^2.0.0",
     "salvattore": "^1.0.9",
-    "equalHeights": "*"
+    "equalHeights": "*",
+    "magnific-popup": "^1.1.0"
   }
 }
